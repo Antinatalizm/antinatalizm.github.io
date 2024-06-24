@@ -1,0 +1,95 @@
+title: "Антинатализм"
+description: "архив сети дружественных блогов"
+permalink: /:categories/:title:output_ext
+lang: "ru"
+excerpt_separator: "\n\n\n"
+date_format: "%Y.%m.%d"
+
+collections:
+  articles:
+    output: true
+    permalink: /:categories/:title:output_ext
+
+# Layout
+
+show_excerpts: true        # show article excerpts on the home page
+show_frame: false           # adds a gray frame to the site
+show_sidebar: false        # show a sidebar instead of the usual header
+minimal: false             # use a dark header
+
+plugins:
+ - jekyll-feed
+
+blogs:
+ - id: "adekvat"
+   title: "Антинатализм адекватного человека"
+   short_title: "ААЧ"
+   color: "blue"
+   vk: "https://vk.com/public166188545"
+   description: "СКАЖИ \"НЕТ\" ВУЛЬГАРНОМУ ПСЕВДОАНТИНАТАЛИЗМУ!"
+   top: true
+   favicon: true
+   navigation:
+    - title: "Другие блоги"
+      url: "/"
+ - id: "zhenshina"
+   title: "Антинатализм и женщина"
+   short_title: "АНЖ"
+   color: "purple"
+   vk: "https://vk.com/public206149756"
+   description: "Женский (теперь совместный) блог. ЗДЕСЬ МОНИТОРЯТ ПРОИСХОДЯЩЕЕ."
+   favicon: true
+   navigation:
+    - title: "Другие блоги"
+      url: "/"
+ - id: "eto"
+   title: "Антинатализм — это..."
+   short_title: "АНЭ"
+   color: "darkred"
+   vk: "https://vk.com/public210066881"
+   description: "верность этике 🧡 и дружба с головой 🧠"
+   top: true
+   favicon: true
+   navigation:
+    - title: "Другие блоги"
+      url: "/"
+ - id: "istok"
+   title: "Антинатализм"
+   short_title: "АН"
+   color: "gray"
+   vk: "https://vk.com/club60449041"
+   description: "Первое сообщество"
+   favicon: true
+   navigation:
+    - title: "Другие блоги"
+      url: "/"     
+ - id: "zhizn"
+   title: "Антинатализм и Жизнь"
+   short_title: "АиЖ"
+   color: "darkgreen"
+   vk: "https://vk.com/id498858042"
+   description: "Коллективный блог об антинатализме и жизни. Здесь мы сможем быть намного откровенней, чем где бы то ни было."
+   favicon: true
+   navigation:
+    - title: "Другие блоги"
+      url: "/"
+ - id: "strazhy"
+   title: "Стражи Антинатализма"
+   short_title: "Стр"
+   color: "darkcyan"
+   vk: "https://vk.com/id575466335"
+   description: "Сиквел событий коллективного блога \"АН и жизнь\""
+   favicon: true
+   navigation:
+    - title: "Другие блоги"
+      url: "/"
+ - id: "heytery"
+   title: "Анти-антинатализм и жизнь"
+   short_title: "ААН"
+   color: "yellow"
+   vk: "https://vk.com/public201760291"
+   description: "Жемчужины мысли"
+   favicon: true
+   navigation:
+    - title: "Другие блоги"
+      url: "/"
