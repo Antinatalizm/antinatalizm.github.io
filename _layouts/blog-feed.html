@@ -1,0 +1,8 @@
+---
+layout: blog
+---
+{% for post in site.posts %}
+  {% if post.categories[0]==page.category %}
+  {% include post-in-feed.html post=post %}
+  {% endif %}
+{% endfor %}

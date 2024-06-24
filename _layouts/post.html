@@ -1,0 +1,8 @@
+---
+layout: blog
+---
+<article>
+  {% include meta.html post=page %}
+  {{ content | markdownify }}
+  {% if page.copyright %}Источник: <a href="{{ page.copyright }}">{{ page.copyright }}</a>{% endif %}
+</article>

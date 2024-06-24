@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% for b in site.blogs %}
+  {% if page.categories contains b.id or page.category == b.id %}
+    {% assign blog = b %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+<title>{% if page.title %}{{ page.title | escape }}{% unless page.no_parent %} | {{ blog.title | escape }}{% endunless %}{% endif %}</title>
+<meta charset="{{ site.encoding }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Jekyll v{{ jekyll.version }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+{% if site.show_frame %}
+<link rel="stylesheet" href="{{ "/assets/css/frame.css" | relative_url }}">
+{% else %}
+<link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}">
+{% endif %}
+
+<header style="padding-top: 0">
+  {% if blog.top and page.top %}<img src="{{ "/" | relative_url | append: blog.id | append: "/images/top.jpg" }}"/>{% endif %}
+  {% if blog.favicon %}<img src="{{ "/" | relative_url | append: blog.id | append: "/images/apple-touch-icon.png" }}" height="64" width="64"/>{% endif %}<a href="{{ "/" | relative_url | append: blog.id }}" class="title">{{ blog.title | escape }}</a>
+  {% include menu.html menu = blog.navigation %}
+</header>
+
+{{ content }}
+
+{% if blog.external %}
+<footer>
+  {% include menu.html menu = blog.external %}
+</footer>
+{% endif %}
+
+</html>

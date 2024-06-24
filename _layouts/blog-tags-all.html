@@ -1,0 +1,27 @@
+---
+layout: blog
+---
+{% for tag in site.tags %}
+{% assign posts = tag[1] | where: 'categories', page.category %}
+<article><ul>
+  <a name="{{ tag[0] }}"></a><h3>#{{ tag[0] }}</h3>
+  {% for post in tag[1] %}
+    {% for b in site.blogs %}
+    {% if post.categories contains b.id or post.category == b.id %}{% assign blog = b %}{% endif %}
+    {% endfor %}
+  <li><a href="{{ post.url | relative_url }}" style="color:{{ blog.color }}">{{ blog.short_title }} {{ post.date | date: "%Y-%m-%d" }} {% if post.title %}{{ post.title }}{% endif %}</a></li>
+  {% endfor %}
+</ul></article>
+{% endfor %}
+
+<article><ul>
+  <h3>Без тегов</h3>
+  {% for post in site.posts %}
+  {% if post.tags.size==0 %}
+    {% for b in site.blogs %}
+    {% if post.categories contains b.id or post.category == b.id %}{% assign blog = b %}{% endif %}
+    {% endfor %}
+  <li><a href="{{ post.url | relative_url }}" style="color:{{ blog.color }}">{{ blog.short_title }} {{ post.date | date: "%Y-%m-%d" }} {% if post.title %}{{ post.title }}{% endif %}</a></li>
+  {% endif %}
+  {% endfor %}
+</ul></article>
