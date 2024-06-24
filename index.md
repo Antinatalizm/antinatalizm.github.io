@@ -45,9 +45,15 @@ excerpt: Сайт посвящен философии антинатализма
   <tr><td>&nbsp;</td></tr>
 
   <tr>
+    <td><img src="/istok/images/apple-touch-icon.png" height="64" width="64"/></td>
+    <td>&nbsp;&nbsp;</td>
+    <td style="vertical-align: middle"><a href="{{ "/istok/" | relative_url }}" class="small-title">Антинатализм</a></td>
+  </tr>
+
+  <tr>
     <td><img src="/zhizn/images/apple-touch-icon.png" height="64" width="64" style="float:left"/></td>
     <td>&nbsp;&nbsp;</td>
-    <td style="vertical-align: middle"><a href="{{ "/zhizn/" | relative_url }}" class="small-title">Антинатализм и Жизнь</a></td>
+    <td style="vertical-align: middle"><a href="{{ "/zhizn/" | relative_url }}" class="small-title">Антинатализм и жизнь</a></td>
   </tr>
   
   <tr>
@@ -59,7 +65,7 @@ excerpt: Сайт посвящен философии антинатализма
   <tr>
     <td><img src="/heytery/images/apple-touch-icon.png" height="64" width="64"/></td>
     <td>&nbsp;&nbsp;</td>
-    <td style="vertical-align: middle"><a href="{{ "/heytery/" | relative_url }}" class="small-title">Анти-Антинатализм и Жизнь</a></td>
+    <td style="vertical-align: middle"><a href="{{ "/heytery/" | relative_url }}" class="small-title">Анти-антинатализм и жизнь</a></td>
   </tr>
   
 </table>

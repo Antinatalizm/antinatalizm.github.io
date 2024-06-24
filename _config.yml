@@ -29,6 +29,7 @@ blogs:
    description: "СКАЖИ \"НЕТ\" ВУЛЬГАРНОМУ ПСЕВДОАНТИНАТАЛИЗМУ!"
    top: true
    favicon: true
+   active: true
    navigation:
     - title: "другие ресурсы"
       url: "/"
@@ -39,6 +40,7 @@ blogs:
    vk: "https://vk.com/public206149756"
    description: "Женский (теперь совместный) блог. ЗДЕСЬ МОНИТОРЯТ ПРОИСХОДЯЩЕЕ."
    favicon: true
+   active: true
    navigation:
     - title: "другие ресурсы"
       url: "/"
@@ -50,6 +52,7 @@ blogs:
    description: "верность этике 🧡 и дружба с головой 🧠"
    top: true
    favicon: true
+   active: true
    navigation:
     - title: "другие ресурсы"
       url: "/"
