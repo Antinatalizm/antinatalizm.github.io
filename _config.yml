@@ -1,5 +1,5 @@
 title: "Антинатализм"
-description: "архив сети дружественных блогов"
+description: "архив сети дружественных ресурсов"
 permalink: /:categories/:title:output_ext
 lang: "ru"
 excerpt_separator: "\n\n\n"
@@ -30,7 +30,7 @@ blogs:
    top: true
    favicon: true
    navigation:
-    - title: "Другие блоги"
+    - title: "другие ресурсы"
       url: "/"
  - id: "zhenshina"
    title: "Антинатализм и женщина"
@@ -40,7 +40,7 @@ blogs:
    description: "Женский (теперь совместный) блог. ЗДЕСЬ МОНИТОРЯТ ПРОИСХОДЯЩЕЕ."
    favicon: true
    navigation:
-    - title: "Другие блоги"
+    - title: "другие ресурсы"
       url: "/"
  - id: "eto"
    title: "Антинатализм — это..."
@@ -51,7 +51,7 @@ blogs:
    top: true
    favicon: true
    navigation:
-    - title: "Другие блоги"
+    - title: "другие ресурсы"
       url: "/"
  - id: "istok"
    title: "Антинатализм"
@@ -61,7 +61,7 @@ blogs:
    description: "Первое сообщество"
    favicon: true
    navigation:
-    - title: "Другие блоги"
+    - title: "другие ресурсы"
       url: "/"     
  - id: "zhizn"
    title: "Антинатализм и жизнь"
@@ -71,7 +71,7 @@ blogs:
    description: "Коллективный блог об антинатализме и жизни. Здесь мы сможем быть намного откровенней, чем где бы то ни было."
    favicon: true
    navigation:
-    - title: "Другие блоги"
+    - title: "другие ресурсы"
       url: "/"
  - id: "strazhy"
    title: "Стражи Антинатализма"
@@ -81,7 +81,7 @@ blogs:
    description: "Сиквел событий коллективного блога \"АН и жизнь\""
    favicon: true
    navigation:
-    - title: "Другие блоги"
+    - title: "другие ресурсы"
       url: "/"
  - id: "heytery"
    title: "Анти-антинатализм и жизнь"
@@ -91,5 +91,5 @@ blogs:
    description: "Жемчужины мысли"
    favicon: true
    navigation:
-    - title: "Другие блоги"
+    - title: "другие ресурсы"
       url: "/"
