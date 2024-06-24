@@ -1,0 +1,8 @@
+<div>
+  <a href="{% if include.internal %}{{ include.url | relative_url }}{% else %}{{ include.url }}{% endif %}">
+    <div class="container">
+	  {% if include.title %}<div style="text-align: center">{{ include.title }}</div>{% else %}{{ include.url }}{% endif %}
+      {% if include.image %}<img src="{{ include.image | relative_url }}" style="width:100%;">{% endif %}
+    </div>
+  </a>
+</div>

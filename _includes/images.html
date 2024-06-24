@@ -1,0 +1,197 @@
+<table class="album-table" style="overflow: visible">
+
+{% if include.album == "2" %}
+<tr>
+  <td>{% include image-in-album.html image=include.image1 %}</td>
+  <td>{% include image-in-album.html image=include.image2 %}</td>
+</tr>
+{% elsif include.album == "1,1" %}
+<tr>
+  <td>{% include image.html image=include.image1 %}</td>
+</tr>
+<tr>
+  <td>{% include image.html image=include.image2 %}</td>
+</tr>
+{% elsif include.album == "1,2" %}
+<tr>
+  <td colspan="2">{% include image.html image=include.image1 %}</td>
+</tr>
+<tr>
+  <td>{% include image-in-album.html image=include.image2 %}</td>
+  <td>{% include image-in-album.html image=include.image3 %}</td>
+</tr>
+{% elsif include.album == "2,1" %}
+<tr>
+  <td>{% include image-in-album.html image=include.image1 %}</td>
+  <td>{% include image-in-album.html image=include.image2 %}</td>
+</tr>
+<tr>
+  <td colspan="2">{% include image.html image=include.image3 %}</td>
+</tr>
+{% elsif include.album == "3" %}
+<tr>
+  <td>{% include image-in-album.html image=include.image1 %}</td>
+  <td>{% include image-in-album.html image=include.image2 %}</td>
+  <td>{% include image-in-album.html image=include.image3 %}</td>
+</tr>
+{% elsif include.album == "2,2" %}
+<tr>
+  <td>{% include image-in-album.html image=include.image1 %}</td>
+  <td>{% include image-in-album.html image=include.image2 %}</td>
+</tr>
+<tr>
+  <td>{% include image-in-album.html image=include.image3 %}</td>
+  <td>{% include image-in-album.html image=include.image4 %}</td>
+</tr>
+{% elsif include.album == "3,1" %}
+<tr>
+  <td>{% include image-in-album.html image=include.image1 %}</td>
+  <td>{% include image-in-album.html image=include.image2 %}</td>
+  <td>{% include image-in-album.html image=include.image3 %}</td>
+</tr>
+<tr>
+  <td colspan="3">{% include image-in-album.html image=include.image4 %}</td>
+</tr>
+{% elsif include.album == "1,3" %}
+<tr>
+  <td colspan="3">{% include image-in-album.html image=include.image1 %}</td>
+</tr>
+<tr>
+  <td>{% include image-in-album.html image=include.image2 %}</td>
+  <td>{% include image-in-album.html image=include.image3 %}</td>
+  <td>{% include image-in-album.html image=include.image4 %}</td>
+</tr>
+{% elsif include.album == "4" %}
+<tr>
+  <td>{% include image-in-album.html image=include.image1 %}</td>
+  <td>{% include image-in-album.html image=include.image2 %}</td>
+  <td>{% include image-in-album.html image=include.image3 %}</td>
+  <td>{% include image-in-album.html image=include.image4 %}</td>
+</tr>
+{% elsif include.album == "4,1" %}
+<tr>
+  <td>{% include image-in-album.html image=include.image1 %}</td>
+  <td>{% include image-in-album.html image=include.image2 %}</td>
+  <td>{% include image-in-album.html image=include.image3 %}</td>
+  <td>{% include image-in-album.html image=include.image4 %}</td>
+</tr>
+<tr>
+  <td>{% include image-in-album.html image=include.image5 %}</td>
+</tr>
+{% elsif include.album == "1,4" %}
+<tr>
+  <td>{% include image-in-album.html image=include.image1 %}</td>
+</tr>
+<tr>
+  <td>{% include image-in-album.html image=include.image2 %}</td>
+  <td>{% include image-in-album.html image=include.image3 %}</td>
+  <td>{% include image-in-album.html image=include.image4 %}</td>
+  <td>{% include image-in-album.html image=include.image5 %}</td>
+</tr>
+{% elsif include.album == "2,3" %}
+<tr>
+  <td colspan="2">{% include image-in-album.html image=include.image1 %}</td>
+  <td>{% include image-in-album.html image=include.image2 %}</td>
+</tr>
+<tr>
+  <td>{% include image-in-album.html image=include.image3 %}</td>
+  <td>{% include image-in-album.html image=include.image4 %}</td>
+  <td>{% include image-in-album.html image=include.image5 %}</td>
+</tr>
+{% elsif include.album == "3,2" %}
+<tr>
+  <td>{% include image-in-album.html image=include.image1 %}</td>
+  <td>{% include image-in-album.html image=include.image2 %}</td>
+  <td>{% include image-in-album.html image=include.image3 %}</td>
+</tr>
+<tr>
+  <td colspan="2">{% include image-in-album.html image=include.image4 %}</td>
+  <td>{% include image-in-album.html image=include.image5 %}</td>
+</tr>
+{% elsif include.album == "2,2,1" %}
+<tr>
+  <td>{% include image-in-album.html image=include.image1 %}</td>
+  <td>{% include image-in-album.html image=include.image2 %}</td>
+</tr>
+<tr>
+  <td>{% include image-in-album.html image=include.image3 %}</td>
+  <td>{% include image-in-album.html image=include.image4 %}</td>
+</tr>
+<tr>
+  <td colspan="2">{% include image-in-album.html image=include.image5 %}</td>
+</tr>
+{% elsif include.album == "2,1,2" %}
+<tr>
+  <td>{% include image-in-album.html image=include.image1 %}</td>
+  <td>{% include image-in-album.html image=include.image2 %}</td>
+</tr>
+<tr>
+  <td colspan="2">{% include image-in-album.html image=include.image3 %}</td>
+</tr>
+<tr>
+  <td>{% include image-in-album.html image=include.image4 %}</td>
+  <td>{% include image-in-album.html image=include.image5 %}</td>
+</tr>
+{% elsif include.album == "1,2,2" %}
+<tr>
+  <td colspan="2">{% include image-in-album.html image=include.image1 %}</td>
+</tr>
+<tr>
+  <td>{% include image-in-album.html image=include.image2 %}</td>
+  <td>{% include image-in-album.html image=include.image3 %}</td>
+</tr>
+<tr>
+  <td>{% include image-in-album.html image=include.image4 %}</td>
+  <td>{% include image-in-album.html image=include.image5 %}</td>
+</tr>
+
+{% elsif include.album == "2,2,2,1" %}
+<tr>
+  <td>{% include image-in-album.html image=include.image1 %}</td>
+  <td>{% include image-in-album.html image=include.image2 %}</td>
+</tr>
+<tr>
+  <td>{% include image-in-album.html image=include.image3 %}</td>
+  <td>{% include image-in-album.html image=include.image4 %}</td>
+</tr>
+<tr>
+  <td>{% include image-in-album.html image=include.image5 %}</td>
+  <td>{% include image-in-album.html image=include.image6 %}</td>
+</tr>
+<tr>
+  <td colspan="2">{% include image-in-album.html image=include.image7 %}</td>
+</tr>
+{% else %}
+<tr>
+  <td>{% include image-in-album.html image=include.image1 %}</td>
+</tr>
+{% if include.image2 %}<tr>
+  <td>{% include image-in-album.html image=include.image2 %}</td>
+</tr>{% endif %}
+{% if include.image3 %}<tr>
+  <td>{% include image-in-album.html image=include.image3 %}</td>
+</tr>{% endif %}
+{% if include.image4 %}<tr>
+  <td>{% include image-in-album.html image=include.image4 %}</td>
+</tr>{% endif %}
+{% if include.image5 %}<tr>
+  <td>{% include image-in-album.html image=include.image5 %}</td>
+</tr>{% endif %}
+{% if include.image6 %}<tr>
+  <td>{% include image-in-album.html image=include.image6 %}</td>
+</tr>{% endif %}
+{% if include.image7 %}<tr>
+  <td>{% include image-in-album.html image=include.image7 %}</td>
+</tr>{% endif %}
+{% if include.image8 %}<tr>
+  <td>{% include image-in-album.html image=include.image8 %}</td>
+</tr>{% endif %}
+{% if include.image9 %}<tr>
+  <td>{% include image-in-album.html image=include.image9 %}</td>
+</tr>{% endif %}
+{% if include.image10 %}<tr>
+  <td>{% include image-in-album.html image=include.image10 %}</td>
+</tr>{% endif %}
+{% endif %}
+
+</table>
