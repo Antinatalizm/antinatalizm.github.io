@@ -1,4 +1,5 @@
 <article>
   {% include meta.html post=include.post preview=true %}
   {{ include.post.content }}
+  {% if page.copyright %}Источник: <a href="{{ page.copyright }}">{{ page.copyright }}</a>{% endif %}
 </article>
