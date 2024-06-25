@@ -59,7 +59,7 @@ excerpt: Сайт посвящен философии антинатализма
   <tr>
     <td><img src="/strazhy/images/apple-touch-icon.png" height="64" width="64"/></td>
     <td>&nbsp;&nbsp;</td>
-    <td style="vertical-align: middle"><a href="{{ "/strazhy/" | relative_url }}" class="small-title">Стражи Антинатализма</a></td>
+    <td style="vertical-align: middle"><a href="{{ "/strazhy/" | relative_url }}" class="small-title">Стражи антинатализма</a></td>
   </tr>
   
   <tr>
