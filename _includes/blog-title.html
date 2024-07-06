@@ -1,0 +1,6 @@
+{% for b in site.blogs %}{% if b.id == include.blog %}{% assign blog=b %}{% break %}{% endif %}{% endfor %}
+<table class="rouge-table"><tr>
+  <td><img src="/{{ include.blog }}/images/apple-touch-icon.png" height="32" width="32"/></td>
+  <td>&nbsp;&nbsp;</td>
+  <td style="vertical-align: middle"><a href="{{ "../{{ include.blog }}/" class="small-title">{{ blog.title }}</a></td>
+</tr></table>

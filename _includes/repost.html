@@ -1,0 +1,26 @@
+<div class="post-in-frame">
+{% if include.blog %}
+  {% include blog-title.html blog = include.blog %}
+  {% assign post_id = "/" | append: include.blog | append: "/" | append: include.post %}
+  {% assign posts = site.posts | where: 'categories', include.blog | where: 'id', post_id %}
+  {% if posts.size == 1 %}
+  {% assign post1 = posts | first %}
+  <article>
+    {% include meta.html post=post1 preview=true small=true %}
+    {% if post1.small %}
+    {{ post1.excerpt }}
+    {% if post1.picture %}{% include image.html image = post1.picture %}{% endif %}
+    {% else %}
+    {{ post1.excerpt }} <a href="{{ post1.url | relative_url }}"><b>ЧИТАТЬ ДАЛЬШЕ</b></a>
+    {% endif %}
+  </article>
+  {% else %}пост не найден{% endif %}
+{% else %}
+  {% if include.hash %}
+  {% assign p = include.url | remove: "https://vk.com/wall" | remove: "vk.com/wall" | split: "_" %}
+  <div id='vk_post_{{ p[0] }}_{{ p[1] }}'></div>
+  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+  <script type="text/javascript">VK.Widgets.Post('vk_post_{{ p[0] }}_{{ p[1] }}', {{ p[0] }}, {{ p[1] }}, '{{ include.hash }}');</script>
+  {% else %}пост не найден{% endif %}
+{% endif %}
+</div>
