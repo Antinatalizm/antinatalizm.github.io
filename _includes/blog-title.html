@@ -2,5 +2,5 @@
 <table class="rouge-table"><tr>
   <td><img src="/{{ include.blog }}/images/apple-touch-icon.png" height="32" width="32"/></td>
   <td>&nbsp;&nbsp;</td>
-  <td style="vertical-align: middle"><a href="{{ "../{{ include.blog }}/" class="small-title">{{ blog.title }}</a></td>
+  <td style="vertical-align: middle"><a href="{{ '../' | append: include.blog | relative_url }}" class="small-title">{{ blog.title }}</a></td>
 </tr></table>
