@@ -8,7 +8,7 @@
   <article>
     {% include meta.html post=post1 preview=true small=true %}
     {% if post1.small %}
-    {{ post1.excerpt }}
+    {% unless post1.excerpt == "..." %}{{ post1.excerpt }}{% endunless %}
     {% if post1.picture %}{% include image.html image = post1.picture %}{% endif %}
     {% else %}
     {{ post1.excerpt }} <a href="{{ post1.url | relative_url }}"><b>ЧИТАТЬ ДАЛЬШЕ</b></a>
